@@ -1,0 +1,89 @@
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+  
+  
+  .sell{
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      height:100vh;
+      width:100%;
+  }
+  .sell-form{
+        width:400px;
+        height:400px;
+        background-color:rgba(0,0,0,0.7); 
+        padding:10px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 0.5rem;
+    }
+    .sell-form::before{
+        background-image: url("../../assets/backimg.jpg");
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	display: block;
+	
+    }
+    .btnn{
+        margin: 0 auto;
+        width: 50%;
+        padding: 8px;
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 20px;
+      }
+
+.quantity{
+    padding: 15px;
+    border-radius: 0.5rem;
+    width: 70%;
+    margin-top: 10px;
+    border-style: none;
+}
+
+.quantity::placeholder{
+    color: black;
+}
+
+
+@media only screen and (max-width: 480px) {
+    body{
+        /* background-image: url(./image.jpg); */
+        background-size: cover !important;
+        background-position: center;
+    }
+    .sell{
+      display: flex;
+      flex-direction: column;
+      height: 590px !important;
+      width: auto !important;
+    }
+    .sell-form{
+        display: flex;
+        width: auto;
+        height: auto;  
+    }
+}
+      
+ 
